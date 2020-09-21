@@ -1,0 +1,13 @@
+﻿using Pronali.Data.Models.Entity.Hr;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Pronali.Data.Repositories.Interfaces.Hr
+{
+   public interface IManualAbsentRepository: IBaseRepository<ManualAbsent>
+    {
+        List<ManualAbsent> GetAllWithRelatedData();
+        ManualAbsent GetFirstOrDefaultwithRelatedData(Func<ManualAbsent, bool> predicate);
+    }
+}
