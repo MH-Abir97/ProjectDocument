@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronali.Data", "Pronali.Data\Pronali.Data.csproj", "{62E751A2-3B8D-43FB-AD72-61A964952E3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronali.Web", "Pronali.Web\Pronali.Web.csproj", "{F805237B-88B2-499B-B7A5-58B0CADFBE51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A3B000B-604B-46F7-B347-FF11195D80DE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62E751A2-3B8D-43FB-AD72-61A964952E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E751A2-3B8D-43FB-AD72-61A964952E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E751A2-3B8D-43FB-AD72-61A964952E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E751A2-3B8D-43FB-AD72-61A964952E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F805237B-88B2-499B-B7A5-58B0CADFBE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F805237B-88B2-499B-B7A5-58B0CADFBE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F805237B-88B2-499B-B7A5-58B0CADFBE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F805237B-88B2-499B-B7A5-58B0CADFBE51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5CBE3E5-5D37-4A37-B03A-0CB1A42D0E31}
+	EndGlobalSection
+EndGlobal

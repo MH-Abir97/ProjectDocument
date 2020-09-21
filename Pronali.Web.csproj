@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Pages\Account\ts\file.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.7.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Core\Data\" />
+    <Folder Include="Areas\HR\Data\" />
+    <Folder Include="Areas\HR\Helper\" />
+    <Folder Include="Areas\HR\Views\Roaster\" />
+    <Folder Include="Areas\POS\Data\" />
+    <Folder Include="Views\ControlPanel\" />
+    <Folder Include="wwwroot\assets\UploadedImage\" />
+    <Folder Include="wwwroot\Pages\Common\Auth\css\" />
+    <Folder Include="wwwroot\Pages\Account\css\" />
+    <Folder Include="wwwroot\Pages\Core\css\" />
+    <Folder Include="wwwroot\Pages\HR\css\" />
+    <Folder Include="wwwroot\Pages\HR\js\RoasterGroup\" />
+    <Folder Include="wwwroot\Pages\HR\js\Roaster\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\plugins\jquery-confirm-v3.3.4\jquery-confirm.js" />
+    <None Include="wwwroot\assets\plugins\jquery-confirm-v3.3.4\jquery-confirm.less" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pronali.Data\Pronali.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DBEncrypterToolKit">
+      <HintPath>..\DBEncrypterToolKit.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\Pages\Account\ts\file.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource.bn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
