@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Pronali.Web.Areas.POS.Controllers
 {
     [Area("POS")]
-    public class DashboardController : Controller
+    public class SettingController : Controller
     {
         public IActionResult Index()
         {
